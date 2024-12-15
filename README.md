@@ -62,9 +62,15 @@ sudo reboot
     MODE: MAXN หรือ 5W
 
 12. เข้าเว็บ http://<jetson_ip_address>:8888 password : jetson 
-13. เชื่อมต่อ usb ของ gamepad เข้ากับคอมพิวเตอร์ และเปิดไปที่ basic_motion.ipynb ก่อนสั่งรันโค๊ดให้เปิดสวิตช์ของมอเตอร์ที่ฐานรถก่อน จากนั้นรันโปรแกรมได้เลยจะเป็นการดึงค่าสถานะของรถมาให้ดู ![image](https://github.com/user-attachments/assets/da784238-6077-47a1-bc5a-b0cb9a070d21)
+13. เชื่อมต่อ usb ของ gamepad เข้ากับคอมพิวเตอร์ และเปิดไปที่ basic_motion.ipynb
 
-14. เปิดไฟล์ teleoperation.ipynb กำหนดค่า index= ให้ตรงกับที่แสดงในเว็บ https://hardwaretester.com/gamepad 
+    ก่อนสั่งรันโค๊ดให้เปิดสวิตช์ของมอเตอร์ที่ฐานรถก่อน
+        ![image](https://github.com/user-attachments/assets/161d147d-19b2-428f-a5a5-7ee656660b83)
+
+
+    จากนั้นรันโปรแกรมได้เลยจะเป็นการดึงค่าสถานะของรถมาให้ดู 
+
+16. เปิดไฟล์ teleoperation.ipynb กำหนดค่า index= ให้ตรงกับที่แสดงในเว็บ https://hardwaretester.com/gamepad 
     กำหนดค่าชุดแรกตามนี้ 
 
         from jetracer.nvidia_racecar import NvidiaRacecar
