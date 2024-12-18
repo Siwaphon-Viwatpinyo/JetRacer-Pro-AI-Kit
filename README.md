@@ -45,8 +45,11 @@
 10. อัพเดทไฟล์
 
 cd jetracer
+
 git checkout ws/pro
+
 sudo python3 setup.py install
+
 sudo reboot
 
 11. กำหนด Power mode ด้วยคำสั่ง 
@@ -71,8 +74,17 @@ sudo reboot
     จากนั้นรันโปรแกรมได้เลยจะเป็นการดึงค่าสถานะของรถมาให้ดู 
 
 16. เปิดไฟล์ teleoperation.ipynb กำหนดค่า index= ให้ตรงกับที่แสดงในเว็บ https://hardwaretester.com/gamepad 
-    กำหนดค่าชุดแรกตามนี้ 
+    กำหนดค่าชุดแรกตามนี้
+    ติดต่อจอยเกมส์
+    
+        import ipywidgets.widgets as widgets
+    
+        controller = widgets.Controller(index=0)  # replace with index of your controller
+    
+        display(controller)
+    
 
+    เริ่มโปรแกรม
         from jetracer.nvidia_racecar import NvidiaRacecar
         import traitlets
         car = NvidiaRacecar()
