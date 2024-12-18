@@ -85,6 +85,7 @@ sudo reboot
     
 
     เริ่มโปรแกรม
+    
         from jetracer.nvidia_racecar import NvidiaRacecar
         import traitlets
         car = NvidiaRacecar()
